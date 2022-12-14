@@ -32,26 +32,22 @@ class cuenta(usuario):
         if(consignacion>0):
             saldo = self.get_Dinero() + consignacion
             self.set_Dinero(saldo)
+            return print("Su nuevo saldo es: $" + str(self.get_Dinero()), "\n")
         else: return print("La consignación no es valida \n")
 
     def retirar (self, cantidad):
         if(cantidad < self.get_Dinero()):
             saldo = self.get_Dinero()-cantidad
             self.set_Dinero(saldo)
-            return print("Retiro existoso, su nuevo saldo disponible es: " + str(self.get_Dinero()) + "\n")
-        else: return print("La cantidad ingresada es superior al saldo disponible\n")
+            return print("Retiro existoso, su nuevo saldo disponible es: $" + str(self.get_Dinero()) + "\n")
+        else: return print("No se puede hacer el retiro, la cantidad ingresada es superior al saldo disponible\n")
 
 cuenta1=cuenta("david", "julian", "1234", "23", 15000)
-print(cuenta1.get_Nombre())
-print(cuenta1.get_Apellido())
-print(cuenta1.get_Cedula())
-print(cuenta1.get_Edad())
-print(cuenta1.get_Dinero())
-print(cuenta1.mostrar())
+cuenta1.mostrar()
 cuenta1.ingresar(500)
-print(cuenta1.mostrar())
+cuenta1.mostrar()
 cuenta1.retirar(20000)
-print(cuenta1.mostrar())
+cuenta1.mostrar()
 cuenta1.retirar(1500)
-print(cuenta1.mostrar())
+cuenta1.mostrar()
 
