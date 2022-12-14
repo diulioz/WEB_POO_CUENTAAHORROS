@@ -26,7 +26,7 @@ class cuenta(usuario):
         self.__dineroAhorrado = dineroAh
 
     def mostrar(self):
-        return "Nombre: "+ self.get_Nombre() + "\n" + "Apellido: "+ self.get_Apellido() + "\n" "Cedula: "+ self.get_Cedula() + "\n" "Edad: "+ self.get_Edad() + "\n" "Saldo Disponible: "+ str(self.get_Dinero()) + "\n" 
+        return print("Nombre: "+ self.get_Nombre() + "\n" + "Apellido: "+ self.get_Apellido() + "\n" "Cedula: "+ self.get_Cedula() + "\n" "Edad: "+ self.get_Edad() + "\n" "Saldo Disponible: $"+ str(self.get_Dinero()) + "\n")
 
     def ingresar(self, consignacion):
         if(consignacion>0):
