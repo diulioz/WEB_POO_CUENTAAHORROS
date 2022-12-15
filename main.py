@@ -7,8 +7,12 @@ while True:
         print("*                            MENU CUENTA-AHORROS                              *")
         print("*******************************************************************************")
         print("1. Ingresar datos de forma manual")
-        print("2. Mostrar ejemplos")
-        print("3. Salir")
+        print("2. Consignar")
+        print("3. Retirar")
+        print("4. Mostrar información de la cuenta")
+        print("5. Mostrar ejemplos")
+
+        print("6. Salir")
         print("*******************************************************************************")
         opcion = int(input("Digite una opcion: "))
         print("\n")
@@ -22,12 +26,12 @@ while True:
              dinero_Retiro=float(input("Valor a retirar: "))
 
              cuenta0=beneficio(nombre_Usuario,apellido_Usuario,cedula_Usuario,edad_Usuario,dineroAhorrado=dinero_Ahorrado)
-             cuenta0.ingresar(dinero_Ahorrado)
              cuenta0.mostrar()
              cuenta0.retirar(dinero_Retiro)
              cuenta0.mostrar()
+        
 
-        if opcion == 2:
+        if opcion == 5:
             cuenta1=beneficio("david", "julian", "1234", "23", 15000)
             cuenta1.ingresar(500)
             cuenta1.mostrar()
