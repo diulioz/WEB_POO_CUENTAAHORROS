@@ -42,12 +42,12 @@ class cuenta(usuario):
             return print("Retiro existoso, su nuevo saldo disponible es: $" + str(self.get_Dinero()) + "\n")
         else: return print("No se puede hacer el retiro, la cantidad ingresada es superior al saldo disponible\n")
 
-cuenta1=cuenta("david", "julian", "1234", "23", 15000)
+"""cuenta1=cuenta("david", "julian", "1234", "23", 15000)
 cuenta1.mostrar()
 cuenta1.ingresar(500)
 cuenta1.mostrar()
 cuenta1.retirar(20000)
 cuenta1.mostrar()
 cuenta1.retirar(1500)
-cuenta1.mostrar()
+cuenta1.mostrar()"""
 
