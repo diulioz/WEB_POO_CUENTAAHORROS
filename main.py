@@ -56,6 +56,7 @@ class Banco:
             print("\n")
             if opcion == 1:
                 self.usuario = self.ingresar_datos()
+                self.usuario.edadUsuario()
                 
             elif opcion == 2:
                 cantidad = int(input("Ingrese el valor a retirar: "))
@@ -70,6 +71,7 @@ class Banco:
                     print("Por favor ingrese valores positivos")
                 else:
                     self.usuario.ingresar(cantidad)
+                    self.usuario.edadUsuario()
 
             elif opcion == 4:
                 self.usuario.mostrar()
@@ -83,14 +85,6 @@ class Banco:
                 cuenta1.mostrar()
                 cuenta1.retirar(1500)
                 cuenta1.mostrar()
-                
-                """cuenta1=beneficio("David", "Criollo", "1020085741", "23", 15000)
-                cuenta1.ingresar(500)
-                cuenta1.mostrar()
-                cuenta1.retirar(20000)
-                cuenta1.mostrar()
-                cuenta1.retirar(1500)
-                cuenta1.mostrar()"""
 
                 cuenta2=beneficio("Vanessa", "Gustin", "78589524", "17", 100000)
                 cuenta2.edadUsuario() 
