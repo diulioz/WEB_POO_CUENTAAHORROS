@@ -22,7 +22,7 @@ class beneficio(cuenta):
         else: return False
 
     def mostrar(self):
-        return print("Nombre: "+ self.get_Nombre() + "\n" + "Apellido: "+ self.get_Apellido() + "\n" "Cedula: "+ self.get_Cedula() + "\n" "Edad: "+ self.get_Edad() + "\n" "Saldo Disponible: $"+ str(self.get_Dinero()) + "\n") 
+        return print("Nombre: "+ str(self.get_Nombre()) + "\n" + "Apellido: "+ str(self.get_Apellido()) + "\n" "Cedula: "+ str(self.get_Cedula()) + "\n" "Edad: "+ str(self.get_Edad()) + "\n" "Saldo Disponible: $"+ str(self.get_Dinero()) + "\n") 
 
 """
 cuenta1=beneficio("david", "julian", "1234", "23", 15000)
