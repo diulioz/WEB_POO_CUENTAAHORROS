@@ -32,22 +32,31 @@ while True:
         
 
         if opcion == 5:
-            cuenta1=beneficio("david", "julian", "1234", "23", 15000)
+            cuenta1=cuenta("david", "julian", "1234", "23", 15000)
+            cuenta1.mostrar()
             cuenta1.ingresar(500)
             cuenta1.mostrar()
             cuenta1.retirar(20000)
             cuenta1.mostrar()
             cuenta1.retirar(1500)
             cuenta1.mostrar()
+            
+            """cuenta1=beneficio("David", "Criollo", "1020085741", "23", 15000)
+            cuenta1.ingresar(500)
+            cuenta1.mostrar()
+            cuenta1.retirar(20000)
+            cuenta1.mostrar()
+            cuenta1.retirar(1500)
+            cuenta1.mostrar()"""
 
-            cuenta2=beneficio("david", "julian", "1234", "17", 100000)
+            cuenta2=beneficio("Vanessa", "Gustin", "78589524", "17", 100000)
             cuenta2.edadUsuario() 
             cuenta2.mostrar()
-            cuenta3=beneficio("david2", "julian2", "1234", "23", 100000)
+            cuenta3=beneficio("Dana", "Criollo", "54725645", "23", 100000)
             cuenta3.edadUsuario() 
             cuenta3.mostrar()
-            cuenta4=beneficio("david3", "julian3", "1234", "32", 100000)
+            cuenta4=beneficio("Juan", "Insuasty", "28754852", "32", 100000)
             cuenta4.edadUsuario() 
             cuenta4.mostrar()
-        if opcion == 3:
+        if opcion == 6:
             break
